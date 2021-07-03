@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+  <!--
+  <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}">
+  </script> -->
+</head>
+
+<body>
+
+  <h2>HTML Forms</h2>
+  <div>
+    <form action="/submit" method='post'>
+      <label for="Science">Science:</label><br>
+      <input type="text" id="science" name="science" placeholder="0"><br>
+      <label for="Maths">Maths:</label><br>
+      <input type="text" id="maths" name="maths" placeholder="0"><br><br>
+      <label for="C ">C Programming:</label><br>
+      <input type="text" id="c" name="c" placeholder="0"><br><br>
+      <label for="datascience">Data Science:</label><br>
+      <input type="text" id="datascience" name="datascience" placeholder="0"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <p>If you click the "Submit" button, the form-data will be sent to a URL called "/submit".</p>
+
+</body>
+
+</html>
